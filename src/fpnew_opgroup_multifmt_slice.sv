@@ -11,7 +11,11 @@
 
 // Author: Stefan Mach <smach@iis.ee.ethz.ch>
 
+`ifndef LIBERO
 `include "common_cells/registers.svh"
+`else
+`include "registers.svh"
+`endif
 
 module fpnew_opgroup_multifmt_slice #(
   parameter fpnew_pkg::opgroup_e     OpGroup       = fpnew_pkg::CONV,

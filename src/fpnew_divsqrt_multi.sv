@@ -11,7 +11,11 @@
 
 // Author: Stefan Mach <smach@iis.ee.ethz.ch>
 
+`ifndef LIBERO
 `include "common_cells/registers.svh"
+`else
+`include "registers.svh"
+`endif
 
 module fpnew_divsqrt_multi #(
   parameter fpnew_pkg::fmt_logic_t   FpFmtConfig  = '1,

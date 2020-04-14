@@ -11,7 +11,11 @@
 
 // Author: Stefan Mach <smach@iis.ee.ethz.ch>
 
+`ifndef LIBERO
 `include "common_cells/registers.svh"
+`else
+`include "registers.svh"
+`endif
 
 module fpnew_noncomp #(
   parameter fpnew_pkg::fp_format_e   FpFormat    = fpnew_pkg::fp_format_e'(0),
